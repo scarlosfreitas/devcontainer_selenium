@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    image: selenium
+    container_name: selenium
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
